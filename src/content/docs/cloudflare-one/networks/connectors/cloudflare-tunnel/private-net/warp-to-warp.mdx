@@ -39,11 +39,7 @@ This guide covers how to:
 			1. Delete `100.64.0.0/10` from the list.
 			2. We recommend [adding back the IPs](/cloudflare-one/networks/connectors/cloudflare-tunnel/private-net/cloudflared/connect-cidr/#3-route-private-network-ips-through-warp) that are not being used for Zero Trust services. For example, if you are using WARP-to-WARP alongside [Gateway host selectors](/cloudflare-one/traffic-policies/egress-policies/host-selectors/) or [private hostname routing](/cloudflare-one/networks/connectors/cloudflare-tunnel/private-net/cloudflared/connect-private-hostname/), add routes to exclude the following IP addresses:
 
-				- `100.64.0.0/12`
-				- `100.81.0.0/16`
-				- `100.82.0.0/15`
-				- `100.84.0.0/14`
-				- `100.88.0.0/13`
+				- `100.64.0.0/11`
 				- `100.112.0.0/12`
 
     </TabItem> <TabItem label="Include IPs and domains">
